@@ -1,29 +1,23 @@
-var exit = false
+var exit = false;
+var prevNode = null;
 $(document).on({
     'mouseenter': function(e) {
     if (!exit){
-        $(e.target).css({
-            "border-color": "#FF0000", 
-            "border-width": "1px",
-            "border-style": "solid"
+        var newNode = e.target
+        $(newNode).css({
+            "background-color": "#bcd5eb",
+            "outline": "1px solid #5166bb"
         })
         console.log("mousenter" + $(e.target).attr('class'));
+        if(prevNode) {
+            $(prevNode).css({
+                "background-color": "",
+                "outline": ""
+            });
+        }
+        prevNode = newNode;
     }
     else{
-        return;
-    }
-    },
-    'mouseleave':  function(e) {
-    if (!exit){
-        $(e.target).css({
-            "border-color": "", 
-            "border-width": "",
-            "border-style": ""
-        
-        });
-        console.log("mouseleave" + $(e.target).attr('class'));
-    }
-    else {
         return;
     }
     },
@@ -34,6 +28,12 @@ $(document).on({
             $(e.target).css({
                 "display": "none"
             });
+            if(prevNode) {
+                $(prevNode).css({
+                    "background-color": "",
+                    "outline": ""
+                });
+            }
             exit = true 
         }
         else{

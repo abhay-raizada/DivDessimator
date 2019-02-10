@@ -17,5 +17,8 @@ Turn on Developer Mode
 Click on "Load Unpacked" and select the cloned folder! Simple! :)
 
 
-Example of google dessiminated by the dessiminator
+Examples
+========
+
+google dessiminated by the dessiminator
 ![Google Dessiminated](examples/GoogleDessiminated.PNG)

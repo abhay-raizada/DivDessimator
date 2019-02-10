@@ -1,4 +1,3 @@
-console.log('sdfasdfsadfsadfsdafasd')
 $(document).on({
     'mouseenter': function(e) {
     $(e.target).css({
@@ -23,6 +22,7 @@ $(document).on({
         $(e.target).css({
             "display": "none"
         });
+        $(e.target).off();
     }
 }, 'div');
 

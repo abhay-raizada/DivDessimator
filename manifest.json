@@ -4,12 +4,20 @@
     "description": "Dessimate All unwanted divs!",
     "manifest_version": 2,
     "permissions": [
-        "contextMenus"
+        "activeTab"
       ],
+    "background": {
+      "scripts": ["js/jquery.js","js/background.js"],
+      "persistent": false
+    },
     "content_scripts": [
-        {
-          "matches": ["<all_urls>"],
-          "js": ["js/jquery.js", "js/dessimate.js"]
-        }
-      ]
+      {
+        "matches": ["<all_urls>"],
+        "js": ["js/jquery.js"]
+      }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    }
+    
 }

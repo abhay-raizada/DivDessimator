@@ -16,6 +16,11 @@
         "js": ["js/jquery.js"]
       }
     ],
+    "icons": { 
+      "16": "images/sketch16.png",
+      "48": "images/sketch48.png",
+      "128": "images/sketch128.png" 
+    },
     "browser_action": {
         "default_popup": "popup.html"
     }

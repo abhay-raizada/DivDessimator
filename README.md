@@ -22,3 +22,8 @@ Examples
 
 google dessiminated by the dessiminator
 ![Google Dessiminated](examples/GoogleDessiminated.PNG)
+
+Usage
+=====
+
+Click on The Extension Icon and click on the part of the website you want to see dessimated. And laugh as it gets destroyed.

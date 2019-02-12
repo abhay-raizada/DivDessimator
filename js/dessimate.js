@@ -40,5 +40,5 @@ $(document).on({
             return;
         }
     }
-}, 'div');
+}, '*');
 
